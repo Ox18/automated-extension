@@ -17,24 +17,30 @@
     <div id='message'>Automate a website by inserting the required JavaScript script </div>
 
         <form id="z_js_injection">
-        <p>
-            <label for="z_js_editor">js</label>
-            <br />
-            <textarea id="z_js_editor" name="z_js_editor" placeholder="/* this js will be injected to page on page load */" cols="40" rows="2"></textarea>
-        </p>
-
-        <p>
-            <input id="save" type="submit" class="pure-button pure-button-primary" value="Save JS" />
-            <!-- <input id="format_code" type="button" value="Format Code" /> -->
-            <input id="remove_js" class="pure-button pure-button-error" type="button" value="Remove JS" />
-        </p>
-        <p id="msgjs"></p>
-    </form>
         <div class="d-grid gap-2">
+          <textarea id="z_js_editor" name="z_js_editor" placeholder="" cols="40" rows="2"></textarea>
+          <p id="msgjs"></p>
+          <input id="save" type="submit" class="pure-button pure-button-primary" value="Inject JS" />
+          <input id="remove_js" class="pure-button pure-button-error" type="button" value="Remove JS" />
+          <div class="pop">
+            <div class="pop-item">
+                <b>Remaining</b>
+                <div>2</div>
+            </div>
+            <div class="pop-item">
+                <b>Ready</b>
+                <div>2</div>
+            </div>
+            <div class="pop-item">
+                <b>Status</b>
+                <div>ok</div>
+            </div>
+          </div>
           <b>List of excel json (only json)</b>
-          <textarea></textarea>
+          <textarea id="json_text_users"></textarea>
           <button class="btn btn-warning" type="button">Add users</button>
         </div>
+        </form>
     </div>
 </body>
 

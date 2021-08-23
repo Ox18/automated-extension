@@ -8,3 +8,13 @@ body {
     display: none;
 }
 .CodeMirror {background: #f8f8f8; border: 1px solid #ccc; height: 120px;}
+
+.pop{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pop-item{
+    text-align: center;
+}
