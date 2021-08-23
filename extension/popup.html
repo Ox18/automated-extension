@@ -8,26 +8,13 @@
     <script src='js/popup.js'></script>
     <script src='lib/codemirror.js'></script>
     <script src='js/css.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body style="width:400px;" class="css-inject-body">
-    <h1>CSS/JS Injector</h1>
-    <div id='message'>CSS style will be added to the page for temprory. To test the style change. How it reflect on page reload. </div>
-    <form id="z_css_injection">
-        <p>
-            <label for="z_style_editor">CSS</label>
-            <br />
-            <textarea id="z_style_editor" name="z_style_editor" placeholder="/* this css style will be injected to page on page load */" cols="40" rows="2"></textarea>
-        </p>
-        <!-- <p><label> Apply for domain <input type="checkbox" id="apply_on_domain" class="apply_on_domain" name="apply_on_domain"></label> -->
-        <p>
-            <input id="save" type="submit" class="pure-button pure-button-primary" value="Save Style" />
-            <!-- <input id="format_code" type="button" value="Format Code" /> -->
-            <input id="remove_style" class="pure-button pure-button-error" type="button" value="Remove Style" />
-
-        </p>
-        <p id="msgcss"></p>
-    </form>
+    <div class="container mt-2 mb-3">
+        <h1>JS Injector</h1>
+    <div id='message'>Automate a website by inserting the required JavaScript script </div>
 
         <form id="z_js_injection">
         <p>
@@ -40,13 +27,15 @@
             <input id="save" type="submit" class="pure-button pure-button-primary" value="Save JS" />
             <!-- <input id="format_code" type="button" value="Format Code" /> -->
             <input id="remove_js" class="pure-button pure-button-error" type="button" value="Remove JS" />
-
         </p>
         <p id="msgjs"></p>
     </form>
-<!--     <iframe src="https://themeheap.com/banner-text.php" width="360"  style="border: 0;min-height: 300px;"></iframe>
- --><!--     <a style="float: right" href="http://xaraar.com" class="pure-button pure-button-success" target="_blank">xaraar.com</a> -->
- <p style="font-size: 10px; color: #ddd;">A product of greelogix.com</p>
+        <div class="d-grid gap-2">
+          <b>List of excel json (only json)</b>
+          <textarea></textarea>
+          <button class="btn btn-warning" type="button">Add users</button>
+        </div>
+    </div>
 </body>
 
 </html>
