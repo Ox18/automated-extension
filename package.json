@@ -2,8 +2,9 @@
   "name": "TypescriptAPI",
   "version": "1.0.0",
   "description": "",
-  "main": "src/server.ts",
+  "main": "build/server.js",
   "scripts": {
+    "start": "node build/server.js",
     "dev": "nodemon src/server.ts",
     "build": "rm -rf build/ && prettier --write src/ && tsc"
   },

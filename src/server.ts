@@ -58,5 +58,5 @@ app.use((req, res, next) => {
 
 /** Server */
 
-const PORT: any = process.env.PORT ?? 5500;
+const PORT: number = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`The server is running on port ${PORT}`));
