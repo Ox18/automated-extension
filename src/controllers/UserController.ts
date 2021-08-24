@@ -38,14 +38,33 @@ class UserController{
     }
 
     static async deleteAll(req: Request, res: Response){
-        res.send('eliminar todos los usuarios');
+        const db = Connection.getDB();
+        const sql = "DELETE FROM user";
+        let message = "Success";
+        let error = false;
+        let success = true;
+        db.run(sql, [], function(err){
+            if(err){
+                error = true;
+                success = false;   
+                message = err.message;
+            }
+        });
+        res.json({
+            error,
+            message,
+            success
+        })
     }
+
     static async activeUser(req: Request, res: Response){
         res.send('eliminar usuario en especifico');
     }
+
     static async getUser(req: Request, res: Response){
         res.send('obtener un usuario al random');
     }
+    
     static async getCount(req: Request, res: Response){
         res.send('obtener cantidades de numeros');
     }

@@ -11,7 +11,7 @@
     Set fs = CreateObject("Scripting.FileSystemObject")
     ' change dir here
     
-    Set jsonfile = fs.CreateTextFile("C:\Users\#nameofuser\Desktop\" & "jsondata.json", True)
+    Set jsonfile = fs.CreateTextFile("C:\Users\#nameofuser\Desktop\" & "jsondata.txt", True)
     
     linedata = "{""Output"": ["
     jsonfile.WriteLine linedata
